@@ -1,0 +1,105 @@
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    grid-template-columns: 45% 45%;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    padding: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+    border: 2px solid #43FFFF;
+}
+
+.cardimg {
+    width: 70%;
+}
+
+.cardtext h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cardtext p {
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.cardimg img {
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn a button {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.1rem 0.3rem;
+    gap: 0.2rem;
+    margin: auto;
+    width: 1;
+    color: white;
+    border-color: #43FFFF;
+    background-color: #B152E0;
+    cursor: pointer;
+    transform: skewY(-3deg);
+    z-index: 999;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn a button:hover {
+    color: black;
+    background-color: #43FFFF;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        grid-template-columns: 100%;
+        gap: 0;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        transition: all 0.25s ease-in-out;
+    }
+}

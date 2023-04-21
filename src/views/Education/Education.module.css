@@ -1,0 +1,45 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 25% 25% 25%;
+    gap: 2rem;
+    padding: auto;
+    margin: auto;
+    margin-top: -1rem;
+}
+
+.card {
+    padding: 1rem;
+    margin: auto;
+}
+
+.card:hover {
+    border: 2px solid #43FFFF;
+}
+
+.text {
+    color: black;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        grid-template-columns: 50vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem
+    }
+}
